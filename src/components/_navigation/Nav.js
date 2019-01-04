@@ -12,6 +12,9 @@ const Nav = props => (
       <div className="toolbar_navigation-items">
           <ul>
               <li><NavLink to="/adopt">Adopt</NavLink></li>
+              <li><NavLink to="/adopt">Donate</NavLink></li>
+              <li><NavLink to="/adopt">Volunteer/Employment</NavLink></li>
+              <li><NavLink to="/adopt">About Us</NavLink></li>
               {/* <li><NavLink to="/contact">Contact</NavLink></li>
               <li><NavLink to="/about">About</NavLink></li> */}
               
