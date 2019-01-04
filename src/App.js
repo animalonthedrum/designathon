@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Menu from './components/_navigation/Menu';
-import Home from './components/_pages/Home';
-// import Footer from './components/_footer/Footer';
+import Home from './components/Home';
+import Footer from './components/Footer';
 // import Work from './components/_pages/Work';
 import Adopt from './components/_pages/Adopt';
 import Error from './components/Error';
@@ -32,6 +32,7 @@ class App extends Component {
             
             <Route component={Error} />
           </Switch>
+          <Footer />
         </div>
       </BrowserRouter>
     );

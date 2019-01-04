@@ -8,30 +8,19 @@
     width: 100%;
     max-width: 150px;
     margin: 15px 40px;
-    background: transparent url(./images/arrow-down.png) 50px center no-repeat;
+    background: transparent url(./images/arrow-down.png) 110px center no-repeat;
     background-size: 12px;
     color: white;
     font-family: $fontOne;
     font-size: 16px;
     font-weight: 700;
     border: 0;
+    outline: 0;
     height: 35px;
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: "";
-    &:nth-child(2) {
-        background-position: 60px center;
-  }
-  &:nth-child(3) {
-        background-position: 95px center;
-  }
-  &:nth-child(4) {
-        background-position: 110px center;
-    }
-}
-.select-selected {
-    //background-color: DodgerBlue;
 }
 /* Style the arrow inside the select element: */
 .select-selected:after {

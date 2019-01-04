@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Card from './Card';
 
 
 
@@ -34,45 +35,14 @@ export default class Home extends Component {
             <option value="hairless">Hairless</option>
             </select>
             <select name="personality" id="" className="personality">
-            <option value="">Personality</option>
+            <option value="">Persona</option>
             <option value="cuddly" className="cuddle">Cuddly</option>
             <option value="loner" className="cuddle">Loner</option>
             <option value="feisty" className="cuddle">Feisty</option>
             <option value="playful">Playful</option>
             </select>
         </div>
-        <div className="cards">
-          <div className="card">
-            <div className="card-image" style={{height: '200px', width:'330px'}}>
-
-            </div>
-            <div className="card-bio">
-            <div className="card-left"><p className="name">George Catstanza</p>
-            </div>
-            <div className="card-right">
-            <p>Adoption #</p>
-            <p>#399023939</p>
-            </div>
-
-             </div>
-             <div className="card-bottom">
-              <p>M</p>
-              <p>3 yrs old</p>
-              <p>Short Hair</p>
-              <p>Playful</p>
-            </div>
-            <div className="cta">
-              <a href="/adopt">CTA</a>
-            </div>
-            <div className="social">
-        <FontAwesomeIcon icon={['fab', 'facebook-f']} className='footerLink' />
-        <FontAwesomeIcon icon={['fab', 'instagram']} className='footerLink' />
-        <FontAwesomeIcon icon="share" className='footerLink' />
-        <FontAwesomeIcon icon="heart" className='footerLink' />
-
-            </div>
-          </div>
-        </div>
+        <Card />
 
       </div>
     )

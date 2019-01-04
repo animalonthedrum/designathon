@@ -3,12 +3,14 @@
     justify-content: center;
     width: 100%;
     max-width: 100%;
+    padding-top: 50px;
     .card {
+        margin: 20px 0 0 40px;
         max-width: 330px;
         display: flex;
         flex-direction: column;
         border: 2px solid $color-gray;
-        border-radius:15px;
+        border-radius:15px 15px 0 0;
         overflow: hidden;
         box-shadow: 1px 6px 10px 3px #ccc;
         .card-image {
@@ -24,16 +26,18 @@
             padding: 20px 0;
             .card-right, .card-left {
                 width: 50%;
+                padding: 10px 20px;
              
             }
             .card-right {
                 display: flex;
-                flex-direction: column;
+                justify-content: flex-end;
             }
             .name {
-                font-size: 24px;
+                font-size: 30px;
                 font-family: $fontOne;
-                font-weight: 700;
+                font-weight: 600;
+                color: $color-purple;
             }
         }
         .card-bottom {
@@ -41,5 +45,35 @@
             width: 100%;
             justify-content: space-around;
         }
+        .cta {
+            padding: 25px 0;
+            a {
+                color: white;
+                font-family: $fontOne;
+                text-decoration: none;
+                background-color: $color-purple;
+                color: white!important;
+                padding: 10px;
+                border-radius: 5px;
+                text-align: center;
+                width: 100px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                transform: translateX(-50%);
+                position: relative;
+                left: 50%;
+                text-transform:uppercase;
+            }
+        }
+        .social {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0 15px 0;
+        }
     }
+}
+
+.card-link {
+    font-size: 24px;
 }
