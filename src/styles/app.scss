@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100i,400,500,700%7COpen+Sans:400,600,700');
+
+$fontOne: 'Montserrat', sans-serif;
+$fontTwo:'Open Sans', sans-serif;
+$color-gray:#979797;
+$color-purple:#93378c;
+
+h1,h2,h3,h4 {
+    font-family: $fontOne;
+}
+
+p {
+    font-family: $fontTwo;
+    margin: 0;
+}

@@ -1,0 +1,45 @@
+.cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    .card {
+        max-width: 330px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid $color-gray;
+        border-radius:15px;
+        overflow: hidden;
+        box-shadow: 1px 6px 10px 3px #ccc;
+        .card-image {
+            background-image: url('./images/catCard_profile.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        }
+        .card-bio {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            .card-right, .card-left {
+                width: 50%;
+             
+            }
+            .card-right {
+                display: flex;
+                flex-direction: column;
+            }
+            .name {
+                font-size: 24px;
+                font-family: $fontOne;
+                font-weight: 700;
+            }
+        }
+        .card-bottom {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+}

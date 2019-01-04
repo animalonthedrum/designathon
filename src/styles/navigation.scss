@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: transparent;
+    background: #eeeeee;
     height: 100px;
     display: flex;
     align-items:center;
@@ -16,6 +16,7 @@
     justify-content:center; 
     padding: 0 1rem;
     width: 100%;
+    max-width: 1200px;
   }
   
   .toolbar__logo {
@@ -36,6 +37,8 @@
     font-size: 1.5rem;
     height:100%;
     width:100%;
+    font-family: $fontOne;
+    font-weight: 400;
   }
   
   .toolbar_navigation-items {
@@ -47,26 +50,34 @@
     padding: 0;
     display: flex;
     // flex-basis:50%;
-    justify-content: flex-end;
+    justify-content: space-around;
     height: 100px;
     align-items:center;
+    font-weight: 400;
   }
   
   .toolbar_navigation-items li {
     padding: 0 0.5rem;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     color: black;
+    font-family: $fontOne;
+    font-size: 16px;
   }
   
   .toolbar_navigation-items a {
     color: black;
     text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: $fontOne;
+    font-size: 13px;
+
   }
   
   .toolbar_navigation-items a:hover,
   .toolbar_navigation-items a:active {
-    color: #fa923f;
+    color: $color-purple;
   }
   
   @media (max-width: 768px) {
@@ -212,5 +223,21 @@
     &:hover {
       opacity: 0.4;
       height: 60px;
+    }
+  }
+
+  .donate {
+    background-color: $color-purple;
+    padding: 10px;
+    border-radius: 5px;
+    color: white!important;
+    font-family:$fontOne;
+  }
+
+  .nav-soc-link {
+    font-size: 20px;
+    transition: transform .2s linear;
+    &:hover {
+      transform: translateY(-5px);
     }
   }
