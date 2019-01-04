@@ -7,6 +7,7 @@
     height: 100px;
     display: flex;
     align-items:center;
+    justify-content: center;
   }
   
   .toolbar__navigation {
@@ -19,8 +20,10 @@
   
   .toolbar__logo {
     margin-left: 1rem;
+    background-image: url('./images/logo.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     height: 84px;
     width: 110px;
